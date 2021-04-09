@@ -4,14 +4,14 @@
 BASE_MODEL_DIR = 'model'
 
 # 模型名称
-MODEL_NAME = 'chatbot_model.ckpt'
-
+# MODEL_NAME = 'chatbot_model.ckpt'
+MODEL_NAME = 'seq2seqChatbot.ckpt-65700'
 # 训练轮数
-n_epoch = 200
+n_epoch = 30
 # batch样本数
 batch_size = 256
 # 训练时dropout的保留比例
-keep_prob = 0.8
+keep_prob = 0.7
 
 # 有关语料数据的配置
 data_config = {

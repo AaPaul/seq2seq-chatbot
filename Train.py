@@ -27,7 +27,7 @@ def train():
     tf.reset_default_graph()
     config = tf.ConfigProto()
     # config.gpu_options.per_process_gpu_memory_fraction = 0.9
-    config.gpu_options.allow_growth = True
+    config.gpu_options.allow_growth = False
 
     with tf.Graph().as_default():
         with tf.Session(config=config) as sess:

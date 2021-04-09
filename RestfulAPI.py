@@ -67,10 +67,10 @@ class IndexHandler(BaseHandler):
         infos = self.get_query_argument("infos")
         print("Q:", infos)
         # 捕捉服务器异常信息
-        #try:
-        result = chatbot_api(infos=infos)
-        #except:
-        #    result = "服务器内部错误"
+        try:
+            result = chatbot_api(infos=infos)
+        except:
+           result = "服务器内部错误"
         print("A:", "".join(result))
         self.write("".join(result))
 
